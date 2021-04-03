@@ -6,12 +6,14 @@ namespace swap
     {
         static void Main(string[] args)
         {
-            int i, f = 1;
-            for( i=1; i <= 5; i++)
-            {
-                f = f * i;
-                Console.WriteLine(f);
+            int a = 0, b = 1, c;
 
+            for (int i = 0; i < 10; i++)
+            {
+                c = a + b;
+                a = b;
+                b = c;
+                Console.WriteLine(c);
             }
         }
     }
